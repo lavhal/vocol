@@ -1,0 +1,49 @@
+@prefix :        <http://www.evaluate_vocol/vocab#> .
+@prefix owl:     <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
+
+<http://www.evaluate_vocol/vocab> rdf:type owl:Ontology .
+
+:Vehicle
+      rdf:type owl:Class ;
+      rdfs:comment "Transportation Mean"@en ;
+      rdfs:label "Manifest"@en .
+
+:Bus  rdf:type owl:Class ;
+      rdfs:comment "Bus"@en ;
+      rdfs:label "Bus"@en ;
+      rdfs:subClassOf :Vehicle .
+
+:Train
+      rdf:type owl:Class ;
+      rdfs:comment "Train"@en ;
+      rdfs:label "Train"@en ;
+      rdfs:subClassOf :Vehicle .
+
+:hasCoincidenceWith
+      rdf:type owl:ObjectProperty ;
+      rdfs:comment "Place where the Train and Bus share the same stop"@en ;
+      rdfs:domain :Vehicle ;
+      rdfs:label "has Coincidence With"@en ;
+      rdfs:range :Vehicle .
+
+:Identification
+      rdf:type owl:DatatypeProperty ;
+      rdfs:comment "Identificates the Vehicle with the number of the lines"@en ;
+      rdfs:label "Identification"@de .
+
+:Bus1 rdf:type :Bus ;
+      rdfs:label "Bus 1"@en .
+
+:Bus2 rdf:type :Bus ;
+      rdfs:label "Bus 2"@en .
+
+:Train1
+      rdf:type :Train ;
+      :hasCoincidenceWith :Bus1;
+      :hasCoincidenceWith :Bus2;
+       rdfs:label "Train 1"@en .
+	  
+  
