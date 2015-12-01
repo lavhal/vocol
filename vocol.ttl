@@ -9,14 +9,14 @@
 :Vehicle
       rdf:type owl:Class ;
       rdfs:comment "Transportation Mean"@en ;
-      rdfs:label "Manifest"@en .
+      rdfs:label "Vehicle"@en .
 
 :Bus  rdf:type owl:Class ;
       rdfs:comment "Bus"@en;
       rdfs:label "Bus"@en ;
       rdfs:subClassOf :Vehicle .
 
-:Bicycle rdf:type owl:Class ;
+:Bicycle rdf:type owl'Class ;
       rdfs:comment "Bicycle"@en;
       rdfs:label "Bicycle"@en ;
       rdfs:subClassOf :Vehicle .
