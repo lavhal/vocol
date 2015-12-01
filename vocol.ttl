@@ -16,7 +16,7 @@
       rdfs:label "Bus"@en ;
       rdfs:subClassOf :Vehicle .
 
-:Bicycle rdf:type owl'Class ;
+:Bicycle rdf:type owl:Class ;
       rdfs:comment "Bicycle"@en;
       rdfs:label "Bicycle"@en ;
       rdfs:subClassOf :Vehicle .
