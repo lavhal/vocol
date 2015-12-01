@@ -83,7 +83,7 @@ function($, Github, N3, CodeMirror, ShowHint, ModeTurtle, HintTurtle, logger) {
 
   // Prefill some fields for a quick example
   inputElements.owner.val("lavhal");
-  inputElements.repo.val("testProj");
+  inputElements.repo.val("vocol");
   // inputElements.password.val("token");
 
   // Github Interaction -------------------------------------------------------
