@@ -12,7 +12,7 @@
       rdfs:label "Manifest"@en .
 
 :Bus  rdf:type owl:Class ;
-      rdfs:comment "Bus"@en ;
+      rdfs:comment "Bus"@en 
       rdfs:label "Bus"@en ;
       rdfs:subClassOf :Vehicle .
 

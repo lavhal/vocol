@@ -1,4 +1,4 @@
-SELECT DISTINCT ?concept
+SELECT ?bus
 WHERE {
-    ?s a ?concept .
-} LIMIT 50
+    ?bus a :Bus .
+} 
