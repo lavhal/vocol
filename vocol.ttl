@@ -16,15 +16,7 @@
       rdfs:label "Bus"@en ;
       rdfs:subClassOf :Vehicle .
 
-:Train  rdf:type owl:Class ;
-      rdfs:comment "Train"@en;
-      rdfs:label "Train"@en ;
-      rdfs:subClassOf :Vehicle .
-
-
 :Bus1 rdf:type :Bus ;
       rdfs:label "Bus 1"@en .
 
-:Train1 rdf:type :Train ;
-  	rdfs:label "Train 1"@en ;
-           rdfs:comment "Train linie 61" .
+
