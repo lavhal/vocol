@@ -19,15 +19,3 @@
 :Bus1 rdf:type :Bus ;
       rdfs:label "Bus 1"@en .
 
-:Bus882 rdf:type :Bus ;
-      	rdfs:label "Bus 882"@en;
-		rdfs:comment "This bus goes to my home"@en .
-
-:TrainS3 rdf:type :Train ;
-      	rdfs:label "S3"@en;
-		rdfs:comment "It goes to  Alfter"@en .
-
-:Train  rdf:type owl:Class ;
-      rdfs:comment "Train"@en;
-      rdfs:label "Train"@en ;
-      rdfs:subClassOf :Vehicle .
