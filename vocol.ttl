@@ -25,3 +25,5 @@
   rdfs:label "Truck"@en ;
 rdfs:subClassOf :Vehicle .
 
+:Truck1 a :Truck ;
+rdfs:label "Truck"@en .
