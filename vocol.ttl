@@ -25,3 +25,5 @@
       rdfs:label "Carro"@pt ;
       rdfs:subClassOf :Vehicle .
 
+:AlanCar rdf:type :Car ;
+      rdfs:label "Alan`s car"@en .
