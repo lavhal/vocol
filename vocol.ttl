@@ -21,9 +21,4 @@
 :Bus1 rdf:type :Bus ;
       rdfs:label "Bus 1"@en .
 
-:Truck rdf:type owl:Class ;
-  rdfs:label "Truck"@en ;
-rdfs:subClassOf :Vehicle .
 
-:Truck1 a :Truck ;
-rdfs:label "Truck"@en .
