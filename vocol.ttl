@@ -4,7 +4,7 @@
 @prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
 
-<http://www.evaluate_vocol/vocab> rdf:type owl:Ontology .
+<http://vocol.vagrantshare.com> rdf:type owl:Ontology .
 
 :Vehicle
       rdf:type owl:Class ; 
