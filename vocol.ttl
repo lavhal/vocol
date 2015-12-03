@@ -23,5 +23,5 @@
 :Bus1 rdf:type :Bus ;
       rdfs:label "Bus 1"@en .
 
-:Truck343 rdf:type :Truck;
+:Truck343 rdf:type :Truck
 		rdfs:comment "Manufactured by X company".
