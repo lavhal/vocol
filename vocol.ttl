@@ -26,4 +26,4 @@
       rdfs:label "Bus 1"@en .
 
 :Scouter1 rdf:type :Scouter ;
-      rdfs:label "Scouter 1"@en .
+      rdfs:label "Scouter 2"@en .
