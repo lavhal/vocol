@@ -24,4 +24,5 @@
       rdfs:label "Train"@en ;
       rdfs:subClassOf :Vehicle .
 
-
+:Train1 rdf:type :Train ;
+      rdfs:label "Train 1"@en .
