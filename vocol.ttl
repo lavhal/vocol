@@ -25,3 +25,5 @@
   	rdfs:label "Tram"@en ;
   	rdfs:subClassOf :Vehicle .
 
+:TrainBlein rdf:type :Tram;
+	rdfs:label "Blein Mono".
