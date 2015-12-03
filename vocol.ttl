@@ -20,7 +20,7 @@
 :Bus1 rdf:type :Bus ;
       rdfs:label "Bus 1"@en .
 
-:Tram rdf:type owl:Class ;
+:Tram rdf:typ owl:Class ;
   	rdfs:comment "Tram"@en ;
   	rdfs:label "Tram"@en ;
   	rdfs:subClassOf :Vehicle .
