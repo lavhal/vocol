@@ -15,13 +15,8 @@
       rdfs:comment "Bus"@en;
       rdfs:label "Bus"@en ;
       rdfs:subClassOf :Vehicle .
-:Truck rdf:type owl:Class;
-	rdfs:comment "Big Truck is awesome :)"@en;
-	rdfs:label "Truck";
-	rdfs:subClassOf :Vehicle.
 
 :Bus1 rdf:type :Bus ;
       rdfs:label "Bus 1"@en .
 
-:Truck343 rdf:type :Truck
-		rdfs:comment "Manufactured by X company".
+
