@@ -19,4 +19,9 @@
 :Bus1 rdf:type :Bus ;
       rdfs:label "Bus 1"@en .
 
+:Car  rdf:type owl:Class ;
+      rdfs:comment "Car"@en;
+      rdfs:label "Car"@en ;
+      rdfs:subClassOf :Vehicle .
+
 
