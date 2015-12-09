@@ -24,4 +24,5 @@
       rdfs:label "Car"@en ;
       rdfs:subClassOf :Vehicle .
 
-
+:Car1 rdf:type :Car ;
+      rdfs:label "Car 1"@en .
