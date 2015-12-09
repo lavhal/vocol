@@ -16,6 +16,11 @@
       rdfs:label "Bus"@en ;
       rdfs:subClassOf :Vehicle .
 
+:MiniBus  rdf:type owl:Class ;
+      rdfs:comment "MiniBus"@en;
+      rdfs:label "MiniBus"@en ;
+      rdfs:subClassOf :Bus .
+
 :Bus1 rdf:type :Bus ;
       rdfs:label "Bus 1"@en .
 
