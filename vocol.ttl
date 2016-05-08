@@ -25,4 +25,4 @@
       rdfs:label "Bus 1"@en .
 
 :MiniBus1 rdf:type :MiniBus ;
-      rdfs:label "Bus"@en .
+      rdfs:label "Bus"@en . 
