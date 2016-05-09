@@ -2,10 +2,18 @@
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 <http://mobivoc.vagrantshare.com>
 	a owl:Ontology ;
+	.
+
+:Bike
+	a owl:Class ;
+	rdfs:subClassOf :Vehicle ;
+	rdfs:label "Bike"@en ;
+	rdfs:comment "To Represent the Bicycle concept"@en ;
 	.
 
 :Bus
@@ -13,10 +21,14 @@
 	rdfs:subClassOf :Vehicle ;
 	rdfs:label "Bus"@en ;
 	rdfs:comment "Bus"@en ;
+	owl:disjointWith :Car ;
 	.
 
 :Bus1
-	a :Bus ;
+	a
+		:Bus ,
+		owl:NamedIndividual
+		;
 	rdfs:label "Bus 1"@en ;
 	.
 
@@ -25,7 +37,6 @@
 	rdfs:subClassOf :Vehicle ;
 	rdfs:label "Car" ;
 	rdfs:comment "Concept for Car" ;
-	owl:disjointWith :Bus ;
 	.
 
 :MiniBus
@@ -36,7 +47,10 @@
 	.
 
 :MiniBus1
-	a :MiniBus ;
+	a
+		:MiniBus ,
+		owl:NamedIndividual
+		;
 	rdfs:label "Bus"@en ;
 	.
 
