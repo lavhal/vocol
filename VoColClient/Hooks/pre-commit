@@ -26,7 +26,8 @@
           
             echo " ${fileContent} " > tempFileCurl.ttl
 
-            res=$(curl -X POST --data-binary @tempFileCurl.ttl http://vocol.vagrantshare.com/syntaxvalidation)
+            #res=$(curl -X POST --data-binary @tempFileCurl.ttl http://vocol1.vagrantshare.com/syntaxvalidation)
+	    res=$(curl -X POST --data-binary @tempFileCurl.ttl http://vocol1.vagrantshare.com/client)  
 
 	    if echo $res | grep -q "Error"; then
 		echo "\t\033[31mValidation Failed! ${file}\033[0m"
@@ -34,16 +35,19 @@
 		pass=false
 	    else
 	       echo "\t\033[32mValidation Passed! ${file}\033[0m"
+	       echo "$res" > ${file}
 	    fi
    
             rm -f tempFileCurl.ttl
 
 	done
 
-	echo "\Turtle validation complete\n"
+        git update-index --again
+
+	echo "\Validation complete\n"
 
 	if ! $pass; then
-	    echo "\033[41mCOMMIT FAILED:\033[0m Your commit contains files that should pass Validation but do not. Please fix the errors and try again.\n"
+	    echo "\033[41mCOMMIT FAILED:\033[0m Your commit contains files with syntactic errors. Please fix the errors and try again.\n"
 	    echo ${file}
 	    exit 1
 	else
