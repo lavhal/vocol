@@ -1,1 +1,39 @@
+@prefix : <http://vocol.vagrantshare.com/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
+<http://mobivoc.vagrantshare.com>
+	a owl:Ontology ;
+	.
+
+:Bus
+	a owl:Class ;
+	rdfs:subClassOf :Vehicle ;
+	rdfs:label "Bus"@en ;
+	rdfs:comment "Bus"@en ;
+	.
+
+:Bus1
+	a :Bus ;
+	rdfs:label "Bus 1"@en ;
+	.
+
+:MiniBus
+	a owl:Class ;
+	rdfs:subClassOf :Bus ;
+	rdfs:label "MiniBus"@en ;
+	rdfs:comment "MiniBus"@en ;
+	.
+
+:MiniBus1
+	a :MiniBus ;
+	rdfs:label "Bus"@en ;
+	.
+
+:Vehicle
+	a owl:Class ;
+	rdfs:label "Vehicle"@en ;
+	rdfs:comment "Transportation Mean"@en ;
+	.
