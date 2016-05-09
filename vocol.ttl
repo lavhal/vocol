@@ -20,6 +20,14 @@
 	rdfs:label "Bus 1"@en ;
 	.
 
+:Car
+	a owl:Class ;
+	rdfs:subClassOf :Vehicle ;
+	rdfs:label "Car" ;
+	rdfs:comment "Concept for Car" ;
+	owl:disjointWith :Bus ;
+	.
+
 :MiniBus
 	a owl:Class ;
 	rdfs:subClassOf :Bus ;
