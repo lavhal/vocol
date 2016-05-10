@@ -30,8 +30,10 @@
 
             if [ "$?" = "6" ] || [ "$?" = "7" ]; then 
                 echo "\t\033[31mConnection refused or service not available\033[0m";
-                echo "\t\033[31mValidation Failed! ${file}\033[0m"
                 pass=false
+            elif ["$res" = ""] || [ "$res" = " "]; then
+                echo "\t\033[31mUndefined error. Contact your adminstrator!\033[0m";
+                pass=false  
             else
 
               if echo $res | grep -q "Error"; then
