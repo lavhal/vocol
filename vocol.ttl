@@ -1,46 +1,17 @@
-@prefix : <http://vocol.vagrantshare.com#> .
+@prefix : <http://example.com/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix xml: <http://www.w3.org/XML/1998/namespace> .
-@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix xs: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://vocol.vagrantshare.com>
-	a owl:Ontology ;
-	.
-
-<http://vocol.vagrantshare.com/Bus>
+:Bus
 	a owl:Class ;
-	rdfs:subClassOf <http://vocol.vagrantshare.com/Vehicle> ;
+	rdfs:subClassOf :Vehicle ;
 	rdfs:label "Bus"@en ;
 	rdfs:comment "Bus"@en ;
 	.
 
-<http://vocol.vagrantshare.com/Bus1>
-	a
-		<http://vocol.vagrantshare.com/Bus> ,
-		owl:NamedIndividual
-		;
-	rdfs:label "Bus 1"@en ;
-	.
-
-<http://vocol.vagrantshare.com/MiniBus>
-	a owl:Class ;
-	rdfs:subClassOf <http://vocol.vagrantshare.com/Bus> ;
+:MiniBus
+	a :Bus ;
 	rdfs:label "MiniBus"@en ;
-	rdfs:comment "MiniBus"@en ;
-	.
-
-<http://vocol.vagrantshare.com/MiniBus1>
-	a
-		<http://vocol.vagrantshare.com/MiniBus> ,
-		owl:NamedIndividual
-		;
-	rdfs:label "Bus"@en ;
-	.
-
-<http://vocol.vagrantshare.com/Vehicle>
-	a owl:Class ;
-	rdfs:label "Vehicle1"@en ;
-	rdfs:comment "Transportation Mean"@en ;
 	.
