@@ -4,14 +4,10 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xs: <http://www.w3.org/2001/XMLSchema#> .
 
-:Bus
-	a owl:Class ;
-	rdfs:subClassOf :Vehicle ;
-	rdfs:label "Bus"@en ;
-	rdfs:comment "Bus"@en ;
-	.
+:Bus     rdf:type owl:Class ;
+         rdfs:comment "Bus"@en;
+         rdfs:label "Bus"@en ;
+         rdfs:subClassOf :Vehicle .
 
-:MiniBus
-	a :Bus ;
-	rdfs:label "MiniBus"@en ;
-	.
+:MiniBus rdf:type :Bus ;
+         rdfs:label "MiniBus"@en .
