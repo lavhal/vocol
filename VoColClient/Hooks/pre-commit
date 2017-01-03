@@ -26,7 +26,7 @@
           
             echo " ${fileContent} " > tempFileCurl.ttl
 
-	    res=$(curl -X POST --data-binary @tempFileCurl.ttl http://vocol.vagrantshare.com/client)  
+	    res=$(curl -X POST --data-binary @tempFileCurl.ttl http://vocolNew.vagrantshare.com/client)  
 
             if [ "$curlCode" = "6" ] || [ "$curlCode" = "7" ]; then 
                 echo "\t\033[31mConnection refused or service not available\033[0m";
