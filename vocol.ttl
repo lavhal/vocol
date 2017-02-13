@@ -5,7 +5,7 @@
 @prefix xs: <http://www.w3.org/2001/XMLSchema#> .
 
 :Bus
-	a owl:Class ;
+	a owl:Class ;a
 	rdfs:subClassOf :Vehicle ;
 	rdfs:label
 		"Bus"@de ,
