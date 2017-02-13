@@ -7,7 +7,10 @@
 :Bus
 	a owl:Class ;
 	rdfs:subClassOf :Vehicle ;
-	rdfs:label "Bus"@en ;
+	rdfs:label
+		"Bus"@de ,
+		"Bus"@en
+		;
 	rdfs:comment "Bus1"@en ;
 	.
 
