@@ -17,14 +17,19 @@
 :Bus
     a owl:Class ;
     rdfs:comment "Normal Bus"@en ;
-    rdfs:label "Normal Bus"@en ;
+    rdfs:label "NormalBus"@en ;
     rdfs:subClassOf :Vehicle .
 
 :Car
     a owl:Class ;
-    rdfs:comment "Car"@en ;
+    rdfs:comment "Representing the Car concept"@en ;
     rdfs:label "Car"@en ;
     rdfs:subClassOf :Vehicle .
+
+:Regio
+    a :UrbanTrain, owl:NamedIndividual ;
+    rdfs:comment "Regional Train"@en ;
+    rdfs:label "Regio"@en .
 
 :Taxi
     a owl:Class ;
@@ -33,9 +38,26 @@
     rdfs:subClassOf :Car .
 
 :Taxi11
-    a :Taxi ;
+    a :Taxi, owl:NamedIndividual ;
     rdfs:comment " Taxi 1 of route 1"^^xs:string ;
     rdfs:label "Taxi11"^^xs:string .
+
+:Truck
+    a owl:Class ;
+    rdfs:comment "Truck" ;
+    rdfs:label "Truck"@en ;
+    rdfs:subClassOf :Vehicle .
+
+:Truck1
+    a :Truck ;
+    rdfs:comment " Truck1"^^xs:string ;
+    rdfs:label " Truck1"^^xs:string .
+
+:UrbanTrain
+    a owl:Class ;
+    rdfs:comment "Train Concept"@en ;
+    rdfs:label "Train"@en ;
+    rdfs:subClassOf :Vehicle .
 
 :Vehicle
     a owl:Class ;
