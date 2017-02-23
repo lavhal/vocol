@@ -26,22 +26,16 @@
     rdfs:label "Car"@en ;
     rdfs:subClassOf :Vehicle .
 
-:Express1
-    a :UrbanTrain, owl:NamedIndividual ;
-    rdfs:comment "Express Train"@en ;
-    rdfs:label "Express"@en .
-
 :Taxi
     a owl:Class ;
     rdfs:comment " Taxi is a specific type of Car"^^xs:string ;
     rdfs:label "Taxi"^^xs:string ;
     rdfs:subClassOf :Car .
 
-:UrbanTrain
-    a owl:Class ;
-    rdfs:comment "Train Concept"@en ;
-    rdfs:label "Train"@en ;
-    rdfs:subClassOf :Vehicle .
+:Taxi11
+    a :Taxi ;
+    rdfs:comment " Taxi 1 of route 1"^^xs:string ;
+    rdfs:label "Taxi11"^^xs:string .
 
 :Vehicle
     a owl:Class ;
