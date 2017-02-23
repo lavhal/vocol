@@ -8,16 +8,16 @@
 <http://vocab.cs.uni-bonn.de/unistruct>
     a owl:Ontology .
 
+:AirPlane
+    a :Plane, owl:NamedIndividual ;
+    rdfs:comment "AirPlane"@en ;
+    rdfs:label "AirPlane"@en .
+
 :Bus
     a owl:Class ;
     rdfs:comment "Normal Bus"@en ;
     rdfs:label "Normal Bus"@en ;
     rdfs:subClassOf :Vehicle .
-
-:Bus0608
-    a :Bus ;
-    rdfs:comment "Bus of 08 of line 06"^^xs:string ;
-    rdfs:label "Bus0608"^^xs:string .
 
 :Car
     a owl:Class ;
@@ -35,6 +35,12 @@
     rdfs:comment "Plane"@en ;
     rdfs:label "Plane"@en ;
     rdfs:subClassOf :Vehicle .
+
+:Taxi
+    a owl:Class ;
+    rdfs:comment " Taxi is a specific type of Car"^^xs:string ;
+    rdfs:label "Taxi"^^xs:string ;
+    rdfs:subClassOf :Car .
 
 :UrbanTrain
     a owl:Class ;
