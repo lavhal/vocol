@@ -2,6 +2,7 @@
 @prefix : <http://vocab.cs.uni-bonn.de/unistruct#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xs: <http://www.w3.org/2001/XMLSchema#> .
 
 <http://vocab.cs.uni-bonn.de/unistruct>
@@ -9,9 +10,14 @@
 
 :Bus
     a owl:Class ;
-    rdfs:comment "Bus"@en ;
-    rdfs:label "MinBus"@en ;
+    rdfs:comment "Normal Bus"@en ;
+    rdfs:label "Normal Bus"@en ;
     rdfs:subClassOf :Vehicle .
+
+:Bus0608
+    a :Bus ;
+    rdfs:comment "Bus of 08 of line 06"^^xs:string ;
+    rdfs:label "Bus0608"^^xs:string .
 
 :Car
     a owl:Class ;
@@ -19,14 +25,21 @@
     rdfs:label "Car"@en ;
     rdfs:subClassOf :Vehicle .
 
-:CompactCar
-    a :Car ;
-    rdfs:label "CompactCar"@en .
+:Express
+    a :UrbanTrain, owl:NamedIndividual ;
+    rdfs:comment "Express Train"@en ;
+    rdfs:label "Express"@en .
 
-:Train
+:Plane
     a owl:Class ;
-    rdfs:comment "Train Concept"^^xs:string ;
-    rdfs:label "Train"^^xs:string ;
+    rdfs:comment "Plane"@en ;
+    rdfs:label "Plane"@en ;
+    rdfs:subClassOf :Vehicle .
+
+:UrbanTrain
+    a owl:Class ;
+    rdfs:comment "Train Concept"@en ;
+    rdfs:label "Train"@en ;
     rdfs:subClassOf :Vehicle .
 
 :Vehicle
